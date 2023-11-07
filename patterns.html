@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dark Patterns in UX </title> 
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="main.js"></script>
+
+    <!-- <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/custom_splide.css" type="text/css"> -->
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide-core.min.css">
+
+
+
+</head>
+
+<!-- home logo & nav bar -->
+<header>
+    <nav>
+        <ul>
+            <li><a href=“preservation.html”> QUIZ </a></li>
+            <li><a href=patterns.html> PATTERNS </a></li>
+            <li><a href=“financing.html”> SAMPLES </a></li>
+            <li><a href=“consulting.html”> DIGITAL WELLBEING </a></li>
+            <li><a href=“consulting.html”> MORE </a></li>
+        </ul>
+    </nav>
+
+
+</header>
+
+
+<body class="body">
+
+
+
+<!-- <section style="left:200px; top: 300px; position: absolute; height: 500px; background-color:white;"> -->
+    <div id="image-slider" style="top: 180px;" class="splide">
+        <div class="splide__track" style="left:250px; ">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                   <a href="time-fog.html"> <img src="assets\time_fog1.svg" id="slide1" alt="Slide 1"> </a>
+                    <!-- <div class="slide_label" style="color:white"> TIME FOG </div> -->
+                </li>
+                <li class="splide__slide">
+                    <img src="assets\infinite_scroll.svg" id="slide2"  alt="Slide 2">
+                </li>
+                <li class="splide__slide">
+                    <img src="assets\rectangle_test.svg"id="slide3"   alt="Slide 3">
+                </li>
+                <li class="splide__slide">
+                    <img src="assets\rectangle_test.svg" alt="Slide 3">
+                </li>
+                <li class="splide__slide">
+                    <img src="assets\rectangle_test.svg" alt="Slide 3">
+                </li>
+                <li class="splide__slide">
+                    <img src="assets\rectangle_test.svg" alt="Slide 3">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div>
+    </div>
+<!-- </section> -->
+
+    <!-- Include Splide.js JavaScript -->
+    <!-- <script src="node_modules\@splidejs\splide\dist\js\splide.min.js"></script> -->
+
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Splide("#image-slider", {
+                type: 'loop', 
+                perPage: 5,    
+                perMove: 1,          
+                drag: true,
+                width: '75%',
+                height: '400px',
+                focus: 'center',
+
+ 
+
+            }).mount();
+            
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
